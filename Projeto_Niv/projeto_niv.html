@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descarte de Resíduos</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Georgia", serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #111;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            font-size: 14px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #111;
+        }
+
+        /* Descarte */
+
+        .Descarte {
+            padding: 40px 60px;
+        }
+
+        .Descarte h1 {
+            font-size: 70px;
+            margin-bottom: 30px;
+        }
+
+        .Descarte-image {
+            background: #cfe3b4;
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .Descarte-image img {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 15px;
+        }
+
+        /* SERVIÇOS */
+
+        .servicos {
+            padding: 60px;
+        }
+
+        .servicos h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .service {
+            font-size: 14px;
+        }
+
+        .service h3 {
+            margin-bottom: 10px;
+        }
+
+        /* MAPA */
+
+        .map {
+            padding: 60px;
+            text-align: center;
+        }
+
+        .map img {
+            width: 100%;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        .map h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .map p {
+            font-size: 13px;
+            margin-bottom: 40px;
+            color: #666;
+        }
+
+        .map-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .map-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .map-card h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .map-card ul {
+            list-style: none;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        /* OUVIDORIA */
+
+        .ouvidoria {
+            padding: 80px;
+            text-align: center;
+        }
+
+        .ouvidoria h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: #4a651a;
+            color: white;
+            border: none;
+            padding: 12px 60px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        /* CONTATO */
+
+        .contact {
+            padding: 60px;
+        }
+
+        .contact h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .contact-item {
+            font-size: 14px;
+        }
+
+        footer {
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+
+    <nav style="display: flex;justify-content: center;">
+        <ul>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Mapeamento</a></li>
+            <li><a href="#">Ouvidoria</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Descarte -->
+
+    <section class="Descarte">
+        <h1 style="text-align: center">Descarte de Resíduos</h1>
+        <div class="Descarte-image" style="position: relative; margin-top: 520px; padding: 100px;">
+            <img src="joinville_2.png"
+                style="position: absolute; z-index:2; margin-top: -590px; border: 15px solid black;">
+        </div>
+
+    </section>
+
+
+    <!-- SERVIÇOS -->
+
+
+    <section class="servicos">
+        <h2>Estrutura e Serviços</h2>
+        <div class="service-grid">
+            <div class="service">
+                <h3>COLETA DE RESÍDUOS</h3>
+                <p>Coleta de resíduos industriais e comerciais</p>
+                <p>Coleta de resíduos perigosos e hospitalares</p>
+                <p>Coleta de resídios químicos</p>
+                <p>Coleta e reciclagem de resíduos de construção civil</p>
+            </div>
+
+            <div class="service">
+                <h3>LOGÍSTICA E EMERGÊNCIAS</h3>
+                <p>Atendimento a emergência ambiental</p>
+                <p>Depósito temporário e destinação final de resíduos</p>
+                <p>Recolhimento resíduios mobiliários (Sofa, colchao, mesas)</p>
+            </div>
+
+            <div class="service">
+                <h3>SERVIÇOS ESPECIAIS</h3>
+                <p>Tratamento de efluentes</p>
+                <p>Hidrojateamento, sucção a vácuo e desobstrução</p>
+                <p>Compostagem acelerada de resíduos orgânicos</p>
+                <p>Serviços especiais em altura e locais confinados</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MAPA -->
+
+
+    <section class="map">
+        <img src="joinville_1.png">
+
+        <h2>Mapeamento</h2>
+        <p>Mapas Coleta de Resíduos Município de Joinville</p>
+        <div class="map-grid">
+
+            <div class="map-card">
+                <h3 style="text-align: center;">Norte</h3>
+                <ul>
+                    <li>Aventureiro</li>
+                    <li>Bom Retiro</li>
+                    <li>Costa e Silva</li>
+                    <li>Espinheiros</li>
+                    <li>Jardim Paraíso</li>
+                    <li>Jardim Sofia</li>
+                    <li>Pirabeiraba</li>
+                    <li>Dona Francisca</li>
+                    <li>Rio Bonito</li>
+                    <li>Vila Cubatão</li>
+                    <li>Santo Antônio</li>
+                    <li>Zona Industrial Norte</li>
+                </ul>
+            </div>
+
+            <div class="map-card">
+                <h3 style="text-align: center;">Sul</h3>
+                <ul>
+                    <li>Adhemar Garcia</li>
+                    <li>Boehmerwald</li>
+                    <li>Fátima</li>
+                    <li>Guanabara</li>
+                    <li>Itaum</li>
+                    <li>Jarivatuba</li>
+                    <li>João Costa</li>
+                    <li>Paranaguamirim</li>
+                    <li>Parque Guarani</li>
+                    <li>Petrópolis</li>
+                    <li>Profipo</li>
+                    <li>Santa Catarina</li>
+                    <li>Ulysses Guimarães</li>
+                </ul>
+            </div>
+
+            <div class="map-card">
+                <h3 style="text-align: center;">Leste</h3>
+                <ul>
+                    <li>Boa Vista</li>
+                    <li>Comasa</li>
+                    <li>Iririú</li>
+                    <li>Jardim Iririú</li>
+                    <li>Saguaçu</li>
+                </ul>
+            </div>
+
+            <div class="map-card">
+                <h3 style="text-align: center;">Oeste</h3>
+                <ul>
+                    <li>América</li>
+                    <li>Anita Garibaldi</li>
+                    <li>Atiradores</li>
+                    <li>Bucarein</li>
+                    <li>Centro</li>
+                    <li>Floresta</li>
+                    <li>Glória</li>
+                    <li>Morro do Meio</li>
+                    <li>Nova Brasília</li>
+                    <li>São Marcos</li>
+                    <li>Vila Nova</li>
+                    <li>Zona Industrial Tupy</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- OUVIDORIA -->
+
+
+    <section class="ouvidoria">
+        <h2>Ouvidoria</h2>
+        <button class="btn" style="padding: 50px;">Solicitar</button>
+    </section>
+
+
+    <!-- CONTATO -->
+
+
+    <section class="contact">
+        <h2>Canais de Contato</h2>
+        <div class="contact-grid">
+
+            <div class="contact-item">
+                <strong>NÚMERO</strong>
+                <p>47-99999-9999</p>
+            </div>
+
+            <div class="contact-item">
+                <strong>EMAIL</strong>
+                <p>coletaderesiduos@joinville.com.br</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© Projeto de Saneamento, 2026</p>
+        <p>Todos os direitos são reservados</p>
+    </footer>
+</body>
+
+</html>
